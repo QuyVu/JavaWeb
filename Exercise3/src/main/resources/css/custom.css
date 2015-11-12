@@ -1,0 +1,32 @@
+.header, .main, .footer {
+	width: 960px;
+	color: #665544;
+	margin: 0px auto;
+	clear: both;
+}
+
+.header, .footer, .leftPane, .rightPane {
+	border: 1px solid gray;
+}
+
+.leftPane, .rightPane {
+	float: left;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.leftPane {
+	width: 100px;
+	height: 200px;
+}
+
+.rightPane {
+	width: 835px;
+	height: 200px;
+}
+
+.leftMenu {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+}

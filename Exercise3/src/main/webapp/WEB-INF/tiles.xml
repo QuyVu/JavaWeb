@@ -31,4 +31,49 @@
 		<put-attribute name="body" value="/WEB-INF/view/help.ftl"
 			type="freemarker" />
 	</definition>
+	<definition name="headingPage" extends="baseLayout">
+		<put-attribute name="title" value="Heading Page" />
+		<put-attribute name="body" value="/WEB-INF/view/heading.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="paragraphPage" extends="baseLayout">
+		<put-attribute name="title" value="Paragraph Page" />
+		<put-attribute name="body" value="/WEB-INF/view/paragraph.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="textformatPage" extends="baseLayout">
+		<put-attribute name="title" value="Formating Text Page" />
+		<put-attribute name="body" value="/WEB-INF/view/textformat.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="hyperPage" extends="baseLayout">
+		<put-attribute name="title" value="Hyper Link Page" />
+		<put-attribute name="body" value="/WEB-INF/view/hyper.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="imgPage" extends="baseLayout">
+		<put-attribute name="title" value="Image Page" />
+		<put-attribute name="body" value="/WEB-INF/view/img.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="listPage" extends="baseLayout">
+		<put-attribute name="title" value="List Page" />
+		<put-attribute name="body" value="/WEB-INF/view/list.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="tablePage" extends="baseLayout">
+		<put-attribute name="title" value="Table Page" />
+		<put-attribute name="body" value="/WEB-INF/view/table.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="formPage" extends="baseLayout">
+		<put-attribute name="title" value="Form Page" />
+		<put-attribute name="body" value="/WEB-INF/view/forms.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="iframePage" extends="baseLayout">
+		<put-attribute name="title" value="iframe Page" />
+		<put-attribute name="body" value="/WEB-INF/view/iframe.ftl"
+			type="freemarker" />
+	</definition>
 </tiles-definitions>  
