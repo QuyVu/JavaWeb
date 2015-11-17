@@ -8,8 +8,6 @@
 		<put-attribute name="header" value="/WEB-INF/view/header.ftl"
 			type="freemarker" />
 		<put-attribute name="title" value="Sample Title" />
-		<put-attribute name="menu" value="/WEB-INF/view/menu.ftl"
-			type="freemarker" />
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/WEB-INF/view/footer.ftl"
 			type="freemarker" />

@@ -1,19 +1,16 @@
-<style>
-input{
-margin: 5px;}
-</style>
-
+<div class="row">
+<div class="col-md-4 col-md-offset-1">
 <form action="forms" method="post">
   <fieldset>
     <legend>Personal information:</legend>
-    First name: 
-    <input type="text" name="firstname">
+    <input class="form-control" type="text" name="firstname" placeholder="First name">
     <br>
-    Last name: 
-    <input type="text" name="lastname">
+    <input class="form-control" type="text" name="lastname" placeholder="Last name">
     <br>
-    <input type="submit" value="Submit">
+    <input class="btn btn-primary btn-block" type="submit" value="Submit">
   </fieldset>
 </form>
+</div>
+</div>
 
-<div><h3>${fullname}</h3></div>
+<div class="row col-md-offset-1"><h3>${fullname}</h3></div>
