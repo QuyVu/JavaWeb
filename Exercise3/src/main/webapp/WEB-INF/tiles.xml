@@ -74,4 +74,16 @@
 		<put-attribute name="body" value="/WEB-INF/view/iframe.ftl"
 			type="freemarker" />
 	</definition>
+
+	<definition name="CSSListPage" extends="baseLayout">
+		<put-attribute name="title" value="CSS List Page" />
+		<put-attribute name="body" value="/WEB-INF/view/CSSList.ftl"
+			type="freemarker" />
+	</definition>
+
+	<definition name="bstAlertPage" extends="baseLayout">
+		<put-attribute name="title" value="Boostrap Alert Page" />
+		<put-attribute name="body" value="/WEB-INF/view/boostrapAlert.ftl"
+			type="freemarker" />
+	</definition>
 </tiles-definitions>  

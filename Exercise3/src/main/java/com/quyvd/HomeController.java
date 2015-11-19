@@ -77,4 +77,14 @@ public class HomeController {
 	public String iframePage() {
 		return "iframePage";
 	}
+	
+	@RequestMapping(value = "/CSSList")
+	public String CSSListPage() {
+		return "CSSListPage";
+	}
+	
+	@RequestMapping(value = "/bstAlert")
+	public String bstAlertPage() {
+		return "bstAlertPage";
+	}
 }
