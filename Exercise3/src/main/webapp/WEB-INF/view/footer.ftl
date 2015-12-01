@@ -1,3 +1,4 @@
+<#ftl encoding='UTF-8'>
 <div class="footer">
-  <h1>Create by QuyVu</h1>
+  <h1>Create by Quý Vũ</h1>
 </div>

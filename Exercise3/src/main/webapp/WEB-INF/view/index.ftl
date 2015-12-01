@@ -1,2 +1,3 @@
-<h1>This is Index Page</h1>
+<#ftl encoding='UTF-8'>
+<h1>Đây là trang Index</h1>
 

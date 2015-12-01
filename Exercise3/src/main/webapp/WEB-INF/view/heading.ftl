@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<#ftl encoding='UTF-8'>
 <h1>This is biggest heading</h1>
 <h2>đây là thẻ h2</h2>(Bug: cannot display Vietnamese)
 <h3>This is h2 tag</h3>
