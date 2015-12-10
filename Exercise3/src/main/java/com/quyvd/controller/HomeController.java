@@ -118,4 +118,37 @@ public class HomeController {
 	public String bstAlertPage() {
 		return "bstAlertPage";
 	}
+
+	@RequestMapping(value = "/regex", method = RequestMethod.GET)
+	public String regex(Model model) {
+		model.addAttribute("email", "");
+		return "jsRegexPage";
+	}
+
+	@RequestMapping(value = "/regex", method = RequestMethod.POST)
+	public String handleEmailSubmit(Model model) {
+		model.addAttribute("email", "This is a valid email");
+		return "jsRegexPage";
+	}
+
+	@RequestMapping(value = "/animation")
+	public String animation() {
+		return "jsAnimationPage";
+	}
+	
+	@RequestMapping(value = "/cookies", method = RequestMethod.GET)
+	public String cookiesPage(Model model) {
+		model.addAttribute("notice", "");
+		return "jsCookiesPage";
+	}
+
+	@RequestMapping(value = "/cookies", method = RequestMethod.POST)
+	public String cookiesPage(@RequestParam String cname, @RequestParam String cvalue, @RequestParam String cexpire, Model model) {
+		if (cname==""||cvalue==""||cexpire=="") {
+			model.addAttribute("notice","Some fields are still empty!!!");
+		} else {
+			model.addAttribute("notice","Success!!!");
+		}
+		return "jsCookiesPage";
+	}
 }

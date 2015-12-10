@@ -4,4 +4,4 @@ Address: ${address}
 <br>
 Phone: ${phone}
 <br>
-Email: ${email}a
+Email: ${email}

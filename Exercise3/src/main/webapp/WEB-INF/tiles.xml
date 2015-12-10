@@ -3,87 +3,106 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	<definition name="baseLayout" template="/WEB-INF/view/layout.ftl"
+	<definition name="baseLayout" template="/WEB-INF/view/static/layout.ftl"
 		templateType="freemarker">
-		<put-attribute name="header" value="/WEB-INF/view/header.ftl"
+		<put-attribute name="header" value="/WEB-INF/view/static/header.ftl"
 			type="freemarker" />
 		<put-attribute name="title" value="Sample Title" />
 		<put-attribute name="body" value="" />
-		<put-attribute name="footer" value="/WEB-INF/view/footer.ftl"
+		<put-attribute name="footer" value="/WEB-INF/view/static/footer.ftl"
 			type="freemarker" />
 	</definition>
+
 	<definition name="indexPage" extends="baseLayout">
 		<put-attribute name="title" value="Index Page" />
-		<put-attribute name="body" value="/WEB-INF/view/index.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/static/index.ftl"
 			type="freemarker" />
-		<put-attribute name="footer" value="/WEB-INF/view/index_footer.ftl"
-			type="freemarker" />
+		<put-attribute name="footer"
+			value="/WEB-INF/view/static/index_footer.ftl" type="freemarker" />
 	</definition>
 	<definition name="aboutPage" extends="baseLayout">
 		<put-attribute name="title" value="About Page" />
-		<put-attribute name="body" value="/WEB-INF/view/about.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/static/about.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="helpPage" extends="baseLayout">
 		<put-attribute name="title" value="Help Page" />
-		<put-attribute name="body" value="/WEB-INF/view/help.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/static/help.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="headingPage" extends="baseLayout">
 		<put-attribute name="title" value="Heading Page" />
-		<put-attribute name="body" value="/WEB-INF/view/heading.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/heading.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="paragraphPage" extends="baseLayout">
 		<put-attribute name="title" value="Paragraph Page" />
-		<put-attribute name="body" value="/WEB-INF/view/paragraph.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/paragraph.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="textformatPage" extends="baseLayout">
 		<put-attribute name="title" value="Formating Text Page" />
-		<put-attribute name="body" value="/WEB-INF/view/textformat.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/textformat.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="hyperPage" extends="baseLayout">
 		<put-attribute name="title" value="Hyper Link Page" />
-		<put-attribute name="body" value="/WEB-INF/view/hyper.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/hyper.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="imgPage" extends="baseLayout">
 		<put-attribute name="title" value="Image Page" />
-		<put-attribute name="body" value="/WEB-INF/view/img.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/img.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="listPage" extends="baseLayout">
 		<put-attribute name="title" value="List Page" />
-		<put-attribute name="body" value="/WEB-INF/view/list.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/list.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="tablePage" extends="baseLayout">
 		<put-attribute name="title" value="Table Page" />
-		<put-attribute name="body" value="/WEB-INF/view/table.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/table.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="formPage" extends="baseLayout">
 		<put-attribute name="title" value="Form Page" />
-		<put-attribute name="body" value="/WEB-INF/view/forms.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/forms.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="iframePage" extends="baseLayout">
 		<put-attribute name="title" value="iframe Page" />
-		<put-attribute name="body" value="/WEB-INF/view/iframe.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/HTML/iframe.ftl"
 			type="freemarker" />
 	</definition>
 
 	<definition name="CSSListPage" extends="baseLayout">
 		<put-attribute name="title" value="CSS List Page" />
-		<put-attribute name="body" value="/WEB-INF/view/CSSList.ftl"
+		<put-attribute name="body" value="/WEB-INF/view/CSS/CSSList.ftl"
 			type="freemarker" />
 	</definition>
 
 	<definition name="bstAlertPage" extends="baseLayout">
 		<put-attribute name="title" value="Boostrap Alert Page" />
-		<put-attribute name="body" value="/WEB-INF/view/boostrapAlert.ftl"
-			type="freemarker" />
+		<put-attribute name="body"
+			value="/WEB-INF/view/CSS/boostrapAlert.ftl" type="freemarker" />
+	</definition>
+	
+	<definition name="jsRegexPage" extends="baseLayout">
+		<put-attribute name="title" value="Regular Expression Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/view/JS/regex.ftl" type="freemarker" />
+	</definition>
+	
+	<definition name="jsAnimationPage" extends="baseLayout">
+		<put-attribute name="title" value="Animation Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/view/JS/animation.ftl" type="freemarker" />
+	</definition>
+	
+	<definition name="jsCookiesPage" extends="baseLayout">
+		<put-attribute name="title" value="Cookies Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/view/JS/cookies.ftl" type="freemarker" />
 	</definition>
 </tiles-definitions>  

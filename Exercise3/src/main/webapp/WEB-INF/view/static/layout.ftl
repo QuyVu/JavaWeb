@@ -8,12 +8,18 @@
 <link rel='stylesheet' href='resources/css/bootstrap.min.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="resources/js/bootstrap.min.js"></script>
+<script src="resources/js/validateEmail.js"></script>
+<script src="resources/js/animation.js"></script>
+<script src="resources/js/dropdownHover.js"></script>
+<script src="resources/js/cookies.js"></script>
 </head>
 <body>
- <@tiles.insertAttribute name="header" />
- <div class="main">
-   <@tiles.insertAttribute name="body" />
- </div>
-<@tiles.insertAttribute name="footer" />
+	<@tiles.insertAttribute name="header" />
+	<div class="main">
+		<div id="body" class="row">
+   			<@tiles.insertAttribute name="body" />
+   		</div>
+	</div>
+	<@tiles.insertAttribute name="footer" />
 </body>
 </html>
