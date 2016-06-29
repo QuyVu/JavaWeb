@@ -1,62 +1,58 @@
-<html>
-<head><title>ViralPatel.net - FreeMarker Spring MVC Hello World</title>
+<#ftl encoding='UTF-8'>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<title>Admin Page</title>
+		<!-- Bootstrap Core CSS -->
+    	<link href="resources/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-body, input {
-	font-family: Calibri, Arial;
-	margin: 0px;
-	padding: 0px;
-}
-#header h2 {
-	color: white;
-	background-color: #3275A8;
-	height: 50px;
-	padding: 5px 0 0 5px;
-	font-size: 20px;
-}
-	
-.datatable {margin-bottom:5px;border:1px solid #eee;border-collapse:collapse;width:400px;max-width:100%;font-family:Calibri}
-.datatable th {padding:3px;border:1px solid #888;height:30px;background-color:#B2D487;text-align:center;vertical-align:middle;color:#444444}
-.datatable tr {border:1px solid #888}
-.datatable tr.odd {background-color:#eee}
-.datatable td {padding:2px;border:1px solid #888}
-#content { padding 5px; margin: 5px; text-align: center}
+    	<!-- DataTables CSS -->
+    	<link href="resources/bower_components/datatables/media/css/dataTables.bootstrap.min.css" rel="stylesheet">
 
-fieldset { width: 300px; padding: 5px; margin-bottom: 0px; }
-legend { font-weight: bold; }
-</style>
+    	<!-- Custom Fonts -->
+    	<link href="resources/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+    	<div id="wrapper">
+			<!-- page-wrapper -->
+        	<div id="page-wrapper">
+        		<div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header">Data</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+					<#include "response-modal.ftl">
+					
+                    <#include "coffee-datatable.ftl">
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+       		</div>
+    	</div>
+		<!-- jQuery -->
+    	<script src="resources/bower_components/jquery/dist/jquery.min.js"></script>
 
-<body>
-<div id="header">
-<H2>
-	<a href="http://viralpatel.net"><img height="37" width="236" border="0px" src="http://viralpatel.net/blogs/wp-content/themes/vp/images/logo.png" align="left"/></a>
-	FreeMarker Spring MVC Hello World
-</H2>
-</div>
+    	<!-- Bootstrap Core JavaScript -->
+    	<script src="resources/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<div id="content">
-  
-  
-  <fieldset>
-  	<legend>Add User</legend>
-  <form name="user" action="add.html" method="post">
-  	Firstname: <input type="text" name="firstname" />	<br/>
-  	Lastname: <input type="text" name="lastname" />	<br/>
-  	<input type="submit" value="   Save   " />
-  </form>
-  </fieldset>
-  <br/>
-  <table class="datatable">
-  	<tr>
-  		<th>Firstname</th>  <th>Lastname</th>
-  	</tr>
-    <#list model["userList"] as user>
-  	<tr>
-  		<td>${user.firstname}</td> <td>${user.lastname}</td>
-  	</tr>
-    </#list>
-  </table>
+    	<!-- DataTables JavaScript -->
+    	<script src="resources/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    	<script src="resources/bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
+    	
+    	<!-- File Saver JavaScript -->
+    	<script src="resources/bower_components/file-saver/FileSaver.min.js"></script>
 
-</div>  
-</body>
-</html>  
+    	<!-- Custom Theme JavaScript -->
+    	<script src="resources/js/manage-coffee.js"></script>
+	</body>
+</html>
