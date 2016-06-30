@@ -21,22 +21,14 @@
     	<div id="wrapper">
 			<!-- page-wrapper -->
         	<div id="page-wrapper">
-        		<div class="row">
-                <div class="col-md-12">
-                    <h1 class="page-header">Data</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-					<#include "response-modal.ftl">
-					
-                    <#include "coffee-datatable.ftl">
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
+            	<div class="row" style="margin-top:20px">
+               		<div class="col-md-10 col-md-offset-1">
+						<#include "response-modal.ftl">
+						<#include "confirm-modal.ftl">
+						<#include "add-data-modal.ftl">
+                    	<#include "data-datatable.ftl">
+                	</div>
+            	</div>
        		</div>
     	</div>
 		<!-- jQuery -->
@@ -53,6 +45,8 @@
     	<script src="resources/bower_components/file-saver/FileSaver.min.js"></script>
 
     	<!-- Custom Theme JavaScript -->
-    	<script src="resources/js/manage-coffee.js"></script>
+    	<script src="resources/js/user.js"></script>
+    	<script src="resources/js/paging.js"></script>
+    	<script src="resources/js/manage-data.js"></script>
 	</body>
 </html>

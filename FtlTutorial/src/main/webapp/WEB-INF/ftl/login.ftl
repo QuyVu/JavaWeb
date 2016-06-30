@@ -4,8 +4,6 @@
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 <title>Login Page</title>
-<link rel='stylesheet' href='/FtlTutorial/resources/css/shared/custom.css'>
-<link rel='stylesheet' href='/FtlTutorial/resources/css/shared/tab.css'>
 <link rel='stylesheet' href='/FtlTutorial/resources/bower_components/font-awesome/css/font-awesome.min.css'>
 <link rel='stylesheet' href='/FtlTutorial/resources/bower_components/bootstrap/dist/css/bootstrap.min.css'>
 <script src="/FtlTutorial/resources/bower_components/jquery/dist/jquery.min.js"></script>
