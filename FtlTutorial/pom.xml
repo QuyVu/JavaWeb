@@ -13,7 +13,7 @@
 		<freemarker.version>2.3.23</freemarker.version>
 		<junit.version>4.12</junit.version>
 		<jquery.version>2.1.4</jquery.version>
-		<JSON.version>2.6.3</JSON.version>
+		<JSON.version>2.9.6</JSON.version>
 		<Log4j.version>2.5</Log4j.version>
 		<postgres.version>9.4-1206-jdbc42</postgres.version>
 		<spring.version>5.0.8.RELEASE</spring.version>
